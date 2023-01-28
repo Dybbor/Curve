@@ -43,7 +43,7 @@ void PrintInfoFigure(const std::shared_ptr<Figure>& figure) {
 }
 
 int main() {
-    size_t countFigures = 10;
+    size_t countFigures = 10000000;
     std::vector<std::shared_ptr<Figure>> figures;
     try {
         GenerateRandomFigures(figures, countFigures);
@@ -102,7 +102,6 @@ int main() {
         }
     }
     auto finishOMP = Time::now();
-
     std::cout << "\nCount circles: " << circles.size() << std::endl;
     std::cout << "Count threads: " << countThreads << std::endl;
     std::cout << "Time seq sum    " << duration(startSeq, finishSeq) << " microseconds"<< std::endl;
