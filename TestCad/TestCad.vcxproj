@@ -142,7 +142,6 @@
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="Helix.h" />
-    <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format" />
